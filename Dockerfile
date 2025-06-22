@@ -1,14 +1,18 @@
 FROM nodered/node-red:latest
 
-# Install node-red-dashboard (optional UI nodes)
-RUN npm install node-red-dashboard
+# Install dashboard (UI)
+RUN npm install --unsafe-perm node-red-dashboard
 
-# Install WebSocket MQTT support
-RUN npm install mqtt
+# Optional: Install MQTT node explicitly
+RUN npm install --unsafe-perm node-red-contrib-mqtt-broker
 
-# Copy flows and settings
+# Copy flow and credential files
 COPY flows.json /data/flows.json
-COPY settings.js /data/settings.js
+COPY flows_cred.json /data/flows_cred.json
 
+# Optional: Copy settings if customized
+# COPY settings.js /data/settings.js
+
+# Expose Node-RED default port
 EXPOSE 1880
 ENV PORT=1880
