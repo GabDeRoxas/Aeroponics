@@ -8,7 +8,7 @@ RUN npm install --unsafe-perm node-red-contrib-mqtt-broker
 
 # Copy flow and credential files
 COPY flows.json /data/flows.json
-COPY flows_cred.json /data/flows_cred.json
+
 
 # Optional: Copy settings if customized
 # COPY settings.js /data/settings.js
