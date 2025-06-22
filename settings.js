@@ -5,4 +5,5 @@ module.exports = {
 
   credentialSecret: process.env.NODE_RED_CREDENTIAL_SECRET || "secret123",
 
-  httpStatic: '/data', // still allows serving static content like /ui
+  httpStatic: '/data' // still allows serving static content like /ui
+};
