@@ -1,0 +1,2233 @@
+[
+    {
+        "id": "575a201eba4e1242",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "55d8bdfe51f10fbc",
+        "type": "group",
+        "z": "575a201eba4e1242",
+        "name": "Switch",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "214918005f9c6c34",
+            "c33fcf625b1e2f1a",
+            "3d6a76c41bf6fa5b"
+        ],
+        "x": 1134,
+        "y": 379,
+        "w": 572,
+        "h": 82
+    },
+    {
+        "id": "314b8c3117959d46",
+        "type": "group",
+        "z": "575a201eba4e1242",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "74283d92fce29e92",
+            "c596a41a9ad349cc",
+            "04dd0fd9984355e3"
+        ],
+        "x": 1134,
+        "y": 479,
+        "w": 572,
+        "h": 82
+    },
+    {
+        "id": "ddf640435350e49e",
+        "type": "group",
+        "z": "575a201eba4e1242",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "965eacbdfdcfdd1e",
+            "8ccddd107a512d37",
+            "628ae232f7cb1aec"
+        ],
+        "x": 1134,
+        "y": 579,
+        "w": 572,
+        "h": 82
+    },
+    {
+        "id": "dad5568fe0f4872a",
+        "type": "group",
+        "z": "575a201eba4e1242",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c1612c09fd3a6c61",
+            "fce91b1dbfbbc37d",
+            "7895269886c1a532",
+            "1a8b8156983dd91b",
+            "eb97c02604707636",
+            "da8315431b5b29c2",
+            "8fd6f6f81cf0e303",
+            "1dc9bb993016def6",
+            "bfe42c3b4d81f42e"
+        ],
+        "x": 1114,
+        "y": 639,
+        "w": 672,
+        "h": 202
+    },
+    {
+        "id": "e8df6f5ca387dc2e",
+        "type": "group",
+        "z": "575a201eba4e1242",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c477b07f3e9fed4e",
+            "bca7432d41969187",
+            "bdb71c8a75b8c243",
+            "57e4518513be731d",
+            "1802351f33abe1b6",
+            "64756d46858a63de",
+            "0a0d4d2764c32f7f"
+        ],
+        "x": 1234,
+        "y": 839,
+        "w": 772,
+        "h": 202
+    },
+    {
+        "id": "ae0b5d4fcc535d08",
+        "type": "group",
+        "z": "575a201eba4e1242",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "690cfe80c66c9021",
+            "632da8aa80ac06b6",
+            "f4b5012cb67b3611"
+        ],
+        "x": 114,
+        "y": 639,
+        "w": 572,
+        "h": 82
+    },
+    {
+        "id": "e10996780909ec12",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/time",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1210,
+        "y": 200,
+        "wires": [
+            [
+                "6472f6a4ee1eec54"
+            ]
+        ]
+    },
+    {
+        "id": "fc43e5ec00d8ec74",
+        "type": "ui_gauge",
+        "z": "575a201eba4e1242",
+        "name": "Temperature",
+        "group": "6e72d53a2b1caef3",
+        "order": 4,
+        "width": 6,
+        "height": 5,
+        "gtype": "donut",
+        "title": "<b>Temperature</b> <i class=\"fa fa-thermometer-half\"></i>",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 50,
+        "colors": [
+            "#0096d6",
+            "#5ff77d",
+            "#ffd600"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1490,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fe93f409320eb555",
+        "type": "ui_gauge",
+        "z": "575a201eba4e1242",
+        "name": "Humidity",
+        "group": "6e72d53a2b1caef3",
+        "order": 5,
+        "width": 6,
+        "height": "5",
+        "gtype": "donut",
+        "title": "<b>Humidity</b> <i class=\"fa fa-cloud\"></i>",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#30c3d3",
+            "#60a9f7",
+            "#ffd600"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "spacing",
+        "x": 1480,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3d6a76c41bf6fa5b",
+        "type": "ui_switch",
+        "z": "575a201eba4e1242",
+        "g": "55d8bdfe51f10fbc",
+        "name": "Relay 1",
+        "label": "",
+        "tooltip": "",
+        "group": "dfc255bccfd997e3",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "brightness_7",
+        "oncolor": "#ff8000",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "brightness_3",
+        "offcolor": "#fff",
+        "animate": true,
+        "className": "toggle-with-count",
+        "x": 1220,
+        "y": 420,
+        "wires": [
+            [
+                "c33fcf625b1e2f1a"
+            ]
+        ]
+    },
+    {
+        "id": "04dd0fd9984355e3",
+        "type": "ui_switch",
+        "z": "575a201eba4e1242",
+        "g": "314b8c3117959d46",
+        "name": "Relay 2",
+        "label": "",
+        "tooltip": "",
+        "group": "dfc255bccfd997e3",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "cloud",
+        "oncolor": "#0099ff",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "cloud_queue",
+        "offcolor": "#fff",
+        "animate": true,
+        "className": "",
+        "x": 1220,
+        "y": 520,
+        "wires": [
+            [
+                "c596a41a9ad349cc"
+            ]
+        ]
+    },
+    {
+        "id": "965eacbdfdcfdd1e",
+        "type": "ui_switch",
+        "z": "575a201eba4e1242",
+        "g": "ddf640435350e49e",
+        "name": "Relay 3",
+        "label": "",
+        "tooltip": "",
+        "group": "dfc255bccfd997e3",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "donut_large",
+        "oncolor": "#00d0ff",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "donut_small",
+        "offcolor": "#fff",
+        "animate": true,
+        "className": "",
+        "x": 1220,
+        "y": 620,
+        "wires": [
+            [
+                "8ccddd107a512d37"
+            ]
+        ]
+    },
+    {
+        "id": "7098499a78937813",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1240,
+        "y": 320,
+        "wires": [
+            [
+                "fc43e5ec00d8ec74"
+            ]
+        ]
+    },
+    {
+        "id": "3b05f0e3714cfc87",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/humidity",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1230,
+        "y": 260,
+        "wires": [
+            [
+                "fe93f409320eb555"
+            ]
+        ]
+    },
+    {
+        "id": "c33fcf625b1e2f1a",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "g": "55d8bdfe51f10fbc",
+        "name": "",
+        "topic": "myhome/relay1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "hivemqcloud",
+        "x": 1400,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c596a41a9ad349cc",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "g": "314b8c3117959d46",
+        "name": "",
+        "topic": "myhome/relay2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "hivemqcloud",
+        "x": 1400,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8ccddd107a512d37",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "g": "ddf640435350e49e",
+        "name": "",
+        "topic": "myhome/relay3",
+        "qos": "",
+        "retain": "",
+        "broker": "hivemqcloud",
+        "x": 1400,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "214918005f9c6c34",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "g": "55d8bdfe51f10fbc",
+        "group": "dfc255bccfd997e3",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "<b>Lights</b>",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1600,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "74283d92fce29e92",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "g": "314b8c3117959d46",
+        "group": "dfc255bccfd997e3",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "<b>Sprinkler</b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1590,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "628ae232f7cb1aec",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "g": "ddf640435350e49e",
+        "group": "dfc255bccfd997e3",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "<b>Valve</b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1600,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c938231772f09543",
+        "type": "ui_gauge",
+        "z": "575a201eba4e1242",
+        "name": "Water Level",
+        "group": "6e72d53a2b1caef3",
+        "order": 3,
+        "width": 6,
+        "height": 5,
+        "gtype": "wave",
+        "title": "<b>Water Level</b> <i class=\"fa fa-cloud\"></i>",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#30c3d3",
+            "#60a9f7",
+            "#ffd600"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "spacing",
+        "x": 1950,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "629de18887276721",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/waterlevel",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1690,
+        "y": 320,
+        "wires": [
+            [
+                "c938231772f09543"
+            ]
+        ]
+    },
+    {
+        "id": "c477b07f3e9fed4e",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "g": "e8df6f5ca387dc2e",
+        "name": "Set Mode",
+        "topic": "myhome/mode",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "hivemqcloud",
+        "x": 1760,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "c1612c09fd3a6c61",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "name": "",
+        "topic": "myhome/relay2status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1240,
+        "y": 740,
+        "wires": [
+            [
+                "fce91b1dbfbbc37d"
+            ]
+        ]
+    },
+    {
+        "id": "fce91b1dbfbbc37d",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "name": "function 2",
+        "func": "if (msg.payload == 1) {\n    msg.payload = \"ON\";\n} else if (msg.payload == 0) {\n    msg.payload = \"OFF\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 740,
+        "wires": [
+            [
+                "7895269886c1a532"
+            ]
+        ]
+    },
+    {
+        "id": "7895269886c1a532",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "group": "6e72d53a2b1caef3",
+        "order": 14,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "<b>Sprinkler Status: </b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1630,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "1a8b8156983dd91b",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "group": "6e72d53a2b1caef3",
+        "order": 16,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "<b>Grow Lights Status: </b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "bottom",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1640,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "eb97c02604707636",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "name": "function 3",
+        "func": "if (msg.payload == 1) {\n    msg.payload = \"ON\";\n} else if (msg.payload == 0) {\n    msg.payload = \"OFF\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 800,
+        "wires": [
+            [
+                "1a8b8156983dd91b"
+            ]
+        ]
+    },
+    {
+        "id": "da8315431b5b29c2",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "name": "",
+        "topic": "myhome/relay1status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1240,
+        "y": 800,
+        "wires": [
+            [
+                "eb97c02604707636"
+            ]
+        ]
+    },
+    {
+        "id": "bca7432d41969187",
+        "type": "switch",
+        "z": "575a201eba4e1242",
+        "g": "e8df6f5ca387dc2e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1590,
+        "y": 920,
+        "wires": [
+            [
+                "1802351f33abe1b6"
+            ],
+            [
+                "bdb71c8a75b8c243"
+            ]
+        ]
+    },
+    {
+        "id": "bdb71c8a75b8c243",
+        "type": "change",
+        "z": "575a201eba4e1242",
+        "g": "e8df6f5ca387dc2e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\": {\"show\": [\"Aeroponics_Relays\"] } }",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 920,
+        "wires": [
+            [
+                "64756d46858a63de"
+            ]
+        ]
+    },
+    {
+        "id": "57e4518513be731d",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "g": "e8df6f5ca387dc2e",
+        "name": "function 4",
+        "func": "if (msg.payload == \"auto\") {\n    msg.payload = true;\n} else if (msg.payload == \"manual\") {\n    msg.payload = false;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 920,
+        "wires": [
+            [
+                "bca7432d41969187"
+            ]
+        ]
+    },
+    {
+        "id": "1802351f33abe1b6",
+        "type": "change",
+        "z": "575a201eba4e1242",
+        "g": "e8df6f5ca387dc2e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\": {\"hide\": [\"Aeroponics_Relays\"] } }",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 880,
+        "wires": [
+            [
+                "64756d46858a63de"
+            ]
+        ]
+    },
+    {
+        "id": "64756d46858a63de",
+        "type": "ui_ui_control",
+        "z": "575a201eba4e1242",
+        "g": "e8df6f5ca387dc2e",
+        "name": "",
+        "events": "all",
+        "x": 1920,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab156f4c7e4004a3",
+        "type": "ui_gauge",
+        "z": "575a201eba4e1242",
+        "name": "Ph Level",
+        "group": "6e72d53a2b1caef3",
+        "order": 11,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "<div style=\"padding-bottom: 10px;\"><b>pH Level</b> <i class=\"fa fa-cloud\"></i></div>",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "14",
+        "colors": [
+            "#00e5ff",
+            "#60a9f7",
+            "#ffd600"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "ph-padding-fix",
+        "x": 1920,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "10046764720877a5",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/ph",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1670,
+        "y": 260,
+        "wires": [
+            [
+                "ab156f4c7e4004a3"
+            ]
+        ]
+    },
+    {
+        "id": "c290ef11200ab107",
+        "type": "ui_template",
+        "z": "575a201eba4e1242",
+        "group": "81b1bdc3.9a60b8",
+        "name": "CSS-Basics",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    /* BACKGROUND stays as you like */\n    body {\n    background-image:\n    linear-gradient(55deg, rgba(109,255,36,0.5) 0%, rgba(196,255,200,0.5) 100%),\n    url(\"https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&w=1280&q=80\");\n    background-size: cover;\n    background-position: center center;\n    background-repeat: no-repeat;\n    color: #111;\n    }\n    md-toolbar,\n    .nr-dashboard-toolbar,\n    .nr-dashboard-header {\n    background: transparent !important;\n    color: #fff !important;\n    box-shadow: none !important;\n}\n\n    /* Optional: For content inside the cards, keep it clear */\n    ui-card-panel>div.nr-dashboard-cardpanel>div>md-card * {\n        background: none !important;\n    }\n\nui-card-panel,\nui-card-panel > div.nr-dashboard-cardpanel > div > md-card {\nbackground: rgba(255,255,255,0.20) !important;\nbackground:blur(2px) !important;\nbackground-clip: padding-box !important;\nborder-radius: 18px !important;\nborder: 1.5px solid rgba(255,255,255,0.5) !important;\nbox-shadow: 0 8px 32px 0 rgba(31,38,135,0.10) !important;\nbackdrop-filter: blur(0px) !important;\n-webkit-backdrop-filter: blur(0px) !important;\nmargin: 18px !important;\npadding: 12px 22px !important;\n}\n    \n /* Hide the group card background and border, but keep widget cards visible */\n    ui-card-panel {\n    background: none !important;\n    border: none !important;\n    box-shadow: none !important;\n    \n    }\n    .nr-dashboard-group {\n    background: none !important;\n    border: none !important;\n    box-shadow: none !important;\n    visibility: hidden;\n    \n    }\n    .nr-dashboard-cardpanel temp layout-column{\n        opacity:0;\n    }\n   \n\n</style>\n\n<!-- Load the font from Google Fonts -->\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap\" rel=\"stylesheet\">\n\n<style>\n/* Apply font to entire dashboard */\nbody, .nr-dashboard-theme, .nr-dashboard-cardcontainer, .nr-dashboard-template, .nr-dashboard-text, .md-button, .md-select-value {\n    font-family: 'Poppins', sans-serif !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 1290,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5a63598fa2f8774",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "4197d3942da9798e"
+            ]
+        ]
+    },
+    {
+        "id": "c6a643ec6643cab6",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/humidity",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "694bb9b19ff9a7ee"
+            ]
+        ]
+    },
+    {
+        "id": "69d5fbe388416a4f",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/waterlevel",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "f772b687f71fd62a"
+            ]
+        ]
+    },
+    {
+        "id": "86528e0863c77665",
+        "type": "ui_template",
+        "z": "575a201eba4e1242",
+        "group": "",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n    (function() {\n    var phoneWidth = 800; // px\n    var mobileTabHash = \"#!/0\";    // Use your mobile tab's hash (e.g. #!/2 or #!/mobile)\n    var desktopTabHash = \"#!/1\";   // Use your desktop tab's hash (e.g. #!/1 or #!/home)\n\n    function checkAndRedirect() {\n        var w = window.innerWidth;\n        var currentHash = window.location.hash;\n        // If small and not on mobile, redirect\n        if (w < phoneWidth && currentHash !== mobileTabHash) {\n            window.location.hash = mobileTabHash;\n        }\n        // If large and not on desktop, redirect\n        if (w >= phoneWidth && currentHash !== desktopTabHash) {\n            window.location.hash = desktopTabHash;\n        }\n    }\n    window.addEventListener(\"resize\", checkAndRedirect);\n    window.addEventListener(\"DOMContentLoaded\", checkAndRedirect);\n})();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 1600,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd7b4ba0ade70c1c",
+        "type": "ui_template",
+        "z": "575a201eba4e1242",
+        "group": "fe0d70ee749307e2",
+        "name": "Styles",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n\n.center{\n    style=\"text-align:center;\n}\n\n.hide{\n    visibility: hidden;\n    padding:100px !impoertant;\n}\n\n.spacing{\n    margin-top: -50px;\n  \n   \n}\n.spacing1{\n    margin-top: 50px; \n    padding-bottom: -10px; \n}\n.spacing2{\n    margin-left: 100px auto !important;\n    margin-right: 200px auto !important;\n}\n.centered-content {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%; /* Use if parent has height */\n  text-align: center;\n  flex-direction: column;\n}\n.spacing3{\n    padding-bottom:100px;\n}\n.nr-dashboard-gauge svg {\n\nmargin: auto !important;\n}\n.left{\n    padding-left: 10px;\n   \n}\n.bottom{\n    padding-bottom: -10px;\n   \n}\n.clock {\n    margin-top:20px !important;\n    margin-left:130px !important;\n    margin-right:130px !important;\n}  \n\n.temp { \n    padding-top:100px auto !important;\n    \n}\n.humid {\n    margin-top:10px !important;\n    margin-left:130px !important;\n}\n.nr-dashboard-gauge svg {\n    transform: scale(0.80);\n    display: block;\n    margin-bottom: 200px  !important; /* Center and add space */\n}\n\n\n.water{\n\n}\n\n.ph{\n\n}\n\n.state{\n    padding-top: 50px !important;\n    padding-right: 100px !important;\n    padding-left: 300px !important;\n    padding-bottom: 100px !important;\n}\n.relay{\n    margin-top: -220px !important;\n    margin-left: 650px !important;\n}\n.my-dropdown-style {\n    padding: 20px !important;\n    margin-top: 10px !important;\n}\n\n.md-card-title,\n.nr-dashboard-cardtitle {\n    margin-bottom: 2px !important;\n    padding-bottom: 0px !important;\n}\n\n/* Pull the gauge up slightly */\n.ph-padding-fix .nr-dashboard-gauge {\n    margin-top: -10px !important;\n}\n\n</style>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 1450,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6472f6a4ee1eec54",
+        "type": "ui_template",
+        "z": "575a201eba4e1242",
+        "group": "6e72d53a2b1caef3",
+        "name": "",
+        "order": 1,
+        "width": 18,
+        "height": "1",
+        "format": "<div style=\"\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    width: 100%;\n    overflow: hidden;\n    font-weight: bold;\n    font-size: 1.5em;\n    line-height: 1em;\n\">\n    {{msg.payload}}\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1460,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fd6f6f81cf0e303",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "name": "function 1",
+        "func": "if (msg.payload == 1) {\n    msg.payload = \"ON\";\n} else if (msg.payload == 0) {\n    msg.payload = \"OFF\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 680,
+        "wires": [
+            [
+                "bfe42c3b4d81f42e"
+            ]
+        ]
+    },
+    {
+        "id": "1dc9bb993016def6",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "name": "",
+        "topic": "myhome/relay3status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1240,
+        "y": 680,
+        "wires": [
+            [
+                "8fd6f6f81cf0e303"
+            ]
+        ]
+    },
+    {
+        "id": "bfe42c3b4d81f42e",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "g": "dad5568fe0f4872a",
+        "group": "6e72d53a2b1caef3",
+        "order": 12,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "<b>Valve Status: </b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1640,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "0a0d4d2764c32f7f",
+        "type": "ui_dropdown",
+        "z": "575a201eba4e1242",
+        "g": "e8df6f5ca387dc2e",
+        "name": "Mode",
+        "label": "<b>Mode</b>",
+        "tooltip": "",
+        "place": "",
+        "group": "6e72d53a2b1caef3",
+        "order": 18,
+        "width": 6,
+        "height": 2,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Automatic",
+                "value": "auto",
+                "type": "str"
+            },
+            {
+                "label": "Manual",
+                "value": "manual",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "topicType": "str",
+        "className": "my-dropdown-style",
+        "x": 1310,
+        "y": 1000,
+        "wires": [
+            [
+                "c477b07f3e9fed4e",
+                "57e4518513be731d"
+            ]
+        ]
+    },
+    {
+        "id": "4197d3942da9798e",
+        "type": "ui_gauge",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "group": "192862166859b7a8",
+        "order": 6,
+        "width": 5,
+        "height": 4,
+        "gtype": "donut",
+        "title": "<b>Temperature</b>",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "temp-card",
+        "x": 540,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "acb0fc977c476e3e",
+        "type": "ui_template",
+        "z": "575a201eba4e1242",
+        "group": "",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    /* Make the main layout use flexbox */\n    body.nr-dashboard-theme md-content {\n        display: flex !important;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        height: 100vh; /* full screen height */\n        padding: 0;\n        margin: 0;\n    }\n\n    /* Ensure dashboard groups stay centered */\n    .nr-dashboard-group {\n        margin: 10px auto !important;\n        float: none !important;\n        display: flex;\n        justify-content: center;\n    }\n\n    /* Remove unnecessary margins from cards */\n    .nr-dashboard-cardcontainer {\n        margin: 0 auto !important;\n        float: none !important;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 360,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "694bb9b19ff9a7ee",
+        "type": "ui_gauge",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "group": "192862166859b7a8",
+        "order": 1,
+        "width": 5,
+        "height": 4,
+        "gtype": "donut",
+        "title": "<b>Humidity</b>",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "temp-gauge",
+        "x": 530,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f772b687f71fd62a",
+        "type": "ui_gauge",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "group": "192862166859b7a8",
+        "order": 11,
+        "width": 5,
+        "height": 4,
+        "gtype": "wave",
+        "title": "<b>Water Level</b>",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "temp-gauge",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8f0cb3557fb1017d",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/time",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "b0d0f4de8709509b"
+            ]
+        ]
+    },
+    {
+        "id": "b0d0f4de8709509b",
+        "type": "ui_template",
+        "z": "575a201eba4e1242",
+        "group": "0ddd45a548a1f3dc",
+        "name": "",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    width: 100%;\n    overflow: hidden;\n    font-weight: bold;\n    font-size: 1.5em;\n    line-height: 1em;\n\">\n    {{msg.payload}}\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10a1e90c5ad9ea8d",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/relay2status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "0d1f7567d11a4bce"
+            ]
+        ]
+    },
+    {
+        "id": "0d1f7567d11a4bce",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "name": "function 5",
+        "func": "if (msg.payload == 1) {\n    msg.payload = \"ON\";\n} else if (msg.payload == 0) {\n    msg.payload = \"OFF\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 440,
+        "wires": [
+            [
+                "44280f66feed09b0"
+            ]
+        ]
+    },
+    {
+        "id": "44280f66feed09b0",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "group": "a96321ce846e7070",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "<b>Sprinkler Status: </b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "186fdad9abb78df9",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "group": "a96321ce846e7070",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "<b>Grow Lights Status: </b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "bottom",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "9548ab828eada956",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "name": "function 6",
+        "func": "if (msg.payload == 1) {\n    msg.payload = \"ON\";\n} else if (msg.payload == 0) {\n    msg.payload = \"OFF\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "186fdad9abb78df9"
+            ]
+        ]
+    },
+    {
+        "id": "5ea6fcb9adf49bd2",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/relay1status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 500,
+        "wires": [
+            [
+                "9548ab828eada956"
+            ]
+        ]
+    },
+    {
+        "id": "45ae2d238e18ba3a",
+        "type": "mqtt in",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/relay3status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "hivemqcloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "f0b762df3f5c0446"
+            ]
+        ]
+    },
+    {
+        "id": "f0b762df3f5c0446",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "name": "function 7",
+        "func": "if (msg.payload == 1) {\n    msg.payload = \"ON\";\n} else if (msg.payload == 0) {\n    msg.payload = \"OFF\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 380,
+        "wires": [
+            [
+                "aee352823a474347"
+            ]
+        ]
+    },
+    {
+        "id": "aee352823a474347",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "group": "a96321ce846e7070",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "<b>Valve Status: </b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "775c303779e3bf2f",
+        "type": "ui_switch",
+        "z": "575a201eba4e1242",
+        "name": "Relay 1",
+        "label": "",
+        "tooltip": "",
+        "group": "43ed8a81a913da98",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "brightness_7",
+        "oncolor": "#ff8000",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "brightness_3",
+        "offcolor": "#fff",
+        "animate": true,
+        "className": "toggle-with-count",
+        "x": 200,
+        "y": 580,
+        "wires": [
+            [
+                "c48a07de3dd00b69"
+            ]
+        ]
+    },
+    {
+        "id": "a80dd606cacbc191",
+        "type": "ui_switch",
+        "z": "575a201eba4e1242",
+        "name": "Relay 3",
+        "label": "",
+        "tooltip": "",
+        "group": "43ed8a81a913da98",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "donut_large",
+        "oncolor": "#00d0ff",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "donut_small",
+        "offcolor": "#fff",
+        "animate": true,
+        "className": "",
+        "x": 200,
+        "y": 780,
+        "wires": [
+            [
+                "8e02614e1a219f41"
+            ]
+        ]
+    },
+    {
+        "id": "c48a07de3dd00b69",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/relay1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "hivemqcloud",
+        "x": 380,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "8e02614e1a219f41",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "topic": "myhome/relay3",
+        "qos": "",
+        "retain": "",
+        "broker": "hivemqcloud",
+        "x": 380,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "a0642fa5a23840f8",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "group": "43ed8a81a913da98",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "<b>Lights</b>",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "11fe3af0fbdba098",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "group": "43ed8a81a913da98",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "<b>Valve</b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "690cfe80c66c9021",
+        "type": "ui_text",
+        "z": "575a201eba4e1242",
+        "g": "ae0b5d4fcc535d08",
+        "group": "43ed8a81a913da98",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "<b>Sprinkler</b>",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "632da8aa80ac06b6",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "g": "ae0b5d4fcc535d08",
+        "name": "",
+        "topic": "myhome/relay2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "hivemqcloud",
+        "x": 380,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f4b5012cb67b3611",
+        "type": "ui_switch",
+        "z": "575a201eba4e1242",
+        "g": "ae0b5d4fcc535d08",
+        "name": "Relay 2",
+        "label": "",
+        "tooltip": "",
+        "group": "43ed8a81a913da98",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "cloud",
+        "oncolor": "#0099ff",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "cloud_queue",
+        "offcolor": "#fff",
+        "animate": true,
+        "className": "",
+        "x": 200,
+        "y": 680,
+        "wires": [
+            [
+                "632da8aa80ac06b6"
+            ]
+        ]
+    },
+    {
+        "id": "e26c25e040cadeb6",
+        "type": "mqtt out",
+        "z": "575a201eba4e1242",
+        "name": "Set Mode",
+        "topic": "myhome/mode",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "hivemqcloud",
+        "x": 560,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "537dae50d7b408b7",
+        "type": "switch",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 900,
+        "wires": [
+            [
+                "90cbf218bd1d77f9"
+            ],
+            [
+                "5547ef23ab1bdef5"
+            ]
+        ]
+    },
+    {
+        "id": "5547ef23ab1bdef5",
+        "type": "change",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\": {\"show\": [\"Aeroponics1_Buttons\"] } }",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 900,
+        "wires": [
+            [
+                "cc8ef5e3d774e953"
+            ]
+        ]
+    },
+    {
+        "id": "ce90868fc628e630",
+        "type": "function",
+        "z": "575a201eba4e1242",
+        "name": "function 8",
+        "func": "if (msg.payload == \"auto\") {\n    msg.payload = true;\n} else if (msg.payload == \"manual\") {\n    msg.payload = false;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 900,
+        "wires": [
+            [
+                "537dae50d7b408b7"
+            ]
+        ]
+    },
+    {
+        "id": "90cbf218bd1d77f9",
+        "type": "change",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\": {\"hide\": [\"Aeroponics1_Buttons\"] } }",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 860,
+        "wires": [
+            [
+                "cc8ef5e3d774e953"
+            ]
+        ]
+    },
+    {
+        "id": "cc8ef5e3d774e953",
+        "type": "ui_ui_control",
+        "z": "575a201eba4e1242",
+        "name": "",
+        "events": "all",
+        "x": 720,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f13979f63fd45dfa",
+        "type": "ui_dropdown",
+        "z": "575a201eba4e1242",
+        "name": "Mode",
+        "label": "<b>Mode</b>",
+        "tooltip": "",
+        "place": "",
+        "group": "d0571de1a6f0d4c2",
+        "order": 18,
+        "width": "5",
+        "height": "2",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Automatic",
+                "value": "auto",
+                "type": "str"
+            },
+            {
+                "label": "Manual",
+                "value": "manual",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "topicType": "str",
+        "className": "my-dropdown-style",
+        "x": 110,
+        "y": 980,
+        "wires": [
+            [
+                "e26c25e040cadeb6",
+                "ce90868fc628e630"
+            ]
+        ]
+    },
+    {
+        "id": "1c366ddf69853768",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8cf47de266546bbc",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "09ccdc6f29859f53",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "75511c9e0983e051",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aa3eb5252df11f71",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f21781ce078f8e51",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cb6d5579af4d53b0",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "36b539142946e6bf",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a2004872d49e3a6c",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 13,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "5be3b21c1ee7c285",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 15,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "612550ac39f6eb0d",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 17,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "d8511d7c56de90ae",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 19,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "e9d0c43f4d4052a4",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 20,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "84029229d7309291",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "0ddd45a548a1f3dc",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1566402d5743f97d",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "367a0d6334ebdae2",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7ebd122231377708",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a42c9a55c4e9f17b",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d7cd68a5647e8321",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "67cba97a110849b5",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "eac5c5fc6447e44b",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2724ce6f311072be",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0c2c63dce937ecb1",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "30d0402500f4fb6e",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "93303169969611ca",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "050b51a839b4aab8",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "hivemqcloud",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Cloud",
+        "broker": "b2f6a66ded4d42eeb4911993f124ad2c.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6e72d53a2b1caef3",
+        "type": "ui_group",
+        "name": "Format",
+        "tab": "tab1",
+        "order": 1,
+        "disp": false,
+        "width": 19,
+        "collapse": false,
+        "className": "spacing"
+    },
+    {
+        "id": "dfc255bccfd997e3",
+        "type": "ui_group",
+        "name": "Relays",
+        "tab": "tab1",
+        "order": 2,
+        "disp": false,
+        "width": "8",
+        "collapse": false,
+        "className": "relay"
+    },
+    {
+        "id": "81b1bdc3.9a60b8",
+        "type": "ui_group",
+        "name": "Hacks",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fe0d70ee749307e2",
+        "type": "ui_group",
+        "name": "Time",
+        "tab": "tab1",
+        "order": 3,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "192862166859b7a8",
+        "type": "ui_group",
+        "name": "Temperature 1",
+        "tab": "dae1736014eedf68",
+        "order": 2,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ddd45a548a1f3dc",
+        "type": "ui_group",
+        "name": "Clock",
+        "tab": "dae1736014eedf68",
+        "order": 1,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a96321ce846e7070",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "dae1736014eedf68",
+        "order": 3,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "43ed8a81a913da98",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "dae1736014eedf68",
+        "order": 6,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d0571de1a6f0d4c2",
+        "type": "ui_group",
+        "name": "Mode",
+        "tab": "dae1736014eedf68",
+        "order": 7,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab1",
+        "type": "ui_tab",
+        "name": "Aeroponics",
+        "icon": "",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dae1736014eedf68",
+        "type": "ui_tab",
+        "name": "Aeroponics1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]
