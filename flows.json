@@ -151,807 +151,6 @@
         "h": 82
     },
     {
-        "id": "3d0f844306d5ae4d",
-        "type": "mqtt-broker",
-        "name": "Aeroponics",
-        "broker": "b2f6a66ded4d42eeb4911993f124ad2c.s1.eu.hivemq.cloud",
-        "port": "8883",
-        "tls": "",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": true,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "myhome/#",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "6ee85e6db2c7c7c1",
-        "type": "ui_group",
-        "name": "Home",
-        "tab": "",
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "ed4ad0097e439e08",
-        "type": "ui_group",
-        "name": "Relays",
-        "tab": "",
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "tab1",
-        "type": "ui_tab",
-        "name": "Aeroponics",
-        "icon": "",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "hivemqcloud",
-        "type": "mqtt-broker",
-        "name": "HiveMQ Cloud",
-        "broker": "b2f6a66ded4d42eeb4911993f124ad2c.s1.eu.hivemq.cloud",
-        "port": "8883",
-        "tls": "",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": true,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "2ce7c42b6c22dd84",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#00cc33",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#00f048",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "reset": false
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#00cc33",
-                    "edited": true
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#00cc33",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1aff53",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#00cc33",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey",
-                "palette": "light"
-            }
-        },
-        "site": {
-            "name": "Node-RED Dashboard",
-            "hideToolbar": "true",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "81b1bdc3.9a60b8",
-        "type": "ui_group",
-        "name": "Hacks",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "1c67a074.861f4",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "fe0d70ee749307e2",
-        "type": "ui_group",
-        "name": "Time",
-        "tab": "tab1",
-        "order": 3,
-        "disp": false,
-        "width": "12",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "dfc255bccfd997e3",
-        "type": "ui_group",
-        "name": "Relays",
-        "tab": "tab1",
-        "order": 2,
-        "disp": false,
-        "width": "8",
-        "collapse": false,
-        "className": "relay"
-    },
-    {
-        "id": "1c366ddf69853768",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8cf47de266546bbc",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "994ed0dd6d47b146",
-        "type": "ui-base",
-        "name": "My Dashboard",
-        "path": "/dashboard",
-        "appIcon": "",
-        "includeClientData": true,
-        "acceptsClientConfig": [
-            "ui-notification",
-            "ui-control"
-        ],
-        "showPathInSidebar": false,
-        "headerContent": "page",
-        "navigationStyle": "default",
-        "titleBarStyle": "default",
-        "showReconnectNotification": true,
-        "notificationDisplayTime": 1,
-        "showDisconnectNotification": true,
-        "allowInstall": true
-    },
-    {
-        "id": "4af9f99867955bed",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "3d74f2a7ce92a268",
-        "type": "ui-page",
-        "name": "Page 1",
-        "ui": "994ed0dd6d47b146",
-        "path": "/page1",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "4af9f99867955bed",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": 0,
-                "cols": 3
-            },
-            {
-                "name": "Tablet",
-                "px": 576,
-                "cols": 6
-            },
-            {
-                "name": "Small Desktop",
-                "px": 768,
-                "cols": 9
-            },
-            {
-                "name": "Desktop",
-                "px": 1024,
-                "cols": 12
-            }
-        ],
-        "order": 1,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "547a1e2e431452f3",
-        "type": "ui-group",
-        "name": "Group 2",
-        "page": "3d74f2a7ce92a268",
-        "width": 6,
-        "height": 1,
-        "order": 2,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "d3b288c2aadeaa45",
-        "type": "ui-spacer",
-        "group": "547a1e2e431452f3",
-        "name": "spacer",
-        "tooltip": "",
-        "order": 1,
-        "width": 1,
-        "height": 1,
-        "className": ""
-    },
-    {
-        "id": "a05eaf28c5376ae0",
-        "type": "ui-spacer",
-        "group": "547a1e2e431452f3",
-        "name": "spacer",
-        "tooltip": "",
-        "order": 2,
-        "width": 1,
-        "height": 1,
-        "className": ""
-    },
-    {
-        "id": "b8133ddefda19bad",
-        "type": "ui-group",
-        "name": "Time",
-        "page": "3d74f2a7ce92a268",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "7c1d75d89fe233e2",
-        "type": "ui-theme",
-        "name": "ui-base.label.theme 2",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "theme-glass",
-        "type": "ui-theme",
-        "name": "Glass Theme"
-    },
-    {
-        "id": "dashboard2-glass",
-        "type": "ui-page",
-        "name": "Glass Dashboard",
-        "ui": "994ed0dd6d47b146",
-        "path": "/glass",
-        "icon": "dashboard",
-        "layout": "grid",
-        "theme": "theme-glass",
-        "order": 2,
-        "className": ""
-    },
-    {
-        "id": "card1",
-        "type": "ui-group",
-        "name": "Temperature",
-        "page": "dashboard2-glass",
-        "width": 6,
-        "height": 5,
-        "order": 1,
-        "showTitle": true,
-        "className": ""
-    },
-    {
-        "id": "card2",
-        "type": "ui-group",
-        "name": "Water Level",
-        "page": "dashboard2-glass",
-        "width": 6,
-        "height": 5,
-        "order": 2,
-        "showTitle": true,
-        "className": ""
-    },
-    {
-        "id": "card3",
-        "type": "ui-group",
-        "name": "Humidity",
-        "page": "dashboard2-glass",
-        "width": 6,
-        "height": 5,
-        "order": 3,
-        "showTitle": true,
-        "className": ""
-    },
-    {
-        "id": "dae1736014eedf68",
-        "type": "ui_tab",
-        "name": "Aeroponics1",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "192862166859b7a8",
-        "type": "ui_group",
-        "name": "Temperature 1",
-        "tab": "dae1736014eedf68",
-        "order": 2,
-        "disp": false,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "c84b5f760b5de16d",
-        "type": "ui_group",
-        "name": "Humidity",
-        "tab": "dae1736014eedf68",
-        "order": 4,
-        "disp": false,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "3e7d58feb78bd823",
-        "type": "ui_group",
-        "name": "Water Level",
-        "tab": "dae1736014eedf68",
-        "order": 5,
-        "disp": false,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "6e72d53a2b1caef3",
-        "type": "ui_group",
-        "name": "Format",
-        "tab": "tab1",
-        "order": 1,
-        "disp": false,
-        "width": 19,
-        "collapse": false,
-        "className": "spacing"
-    },
-    {
-        "id": "72d3df45fbd4aefb",
-        "type": "ui_group",
-        "name": "Controls",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "09ccdc6f29859f53",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "75511c9e0983e051",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "aa3eb5252df11f71",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "f21781ce078f8e51",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 8,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "cb6d5579af4d53b0",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "36b539142946e6bf",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 10,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "a2004872d49e3a6c",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 13,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "5be3b21c1ee7c285",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 15,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "612550ac39f6eb0d",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 17,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "d8511d7c56de90ae",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 19,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "e9d0c43f4d4052a4",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "6e72d53a2b1caef3",
-        "order": 20,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "ff6d42a97bff1f84",
-        "type": "ui_group",
-        "name": "Sensors",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 4,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "0ddd45a548a1f3dc",
-        "type": "ui_group",
-        "name": "Clock",
-        "tab": "dae1736014eedf68",
-        "order": 1,
-        "disp": false,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "a96321ce846e7070",
-        "type": "ui_group",
-        "name": "Status",
-        "tab": "dae1736014eedf68",
-        "order": 3,
-        "disp": false,
-        "width": "5",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "43ed8a81a913da98",
-        "type": "ui_group",
-        "name": "Buttons",
-        "tab": "dae1736014eedf68",
-        "order": 6,
-        "disp": false,
-        "width": "5",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "84029229d7309291",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "0ddd45a548a1f3dc",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "1566402d5743f97d",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "367a0d6334ebdae2",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "7ebd122231377708",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "a42c9a55c4e9f17b",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "d7cd68a5647e8321",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "67cba97a110849b5",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 8,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "eac5c5fc6447e44b",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "2724ce6f311072be",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 10,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "0c2c63dce937ecb1",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 12,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "30d0402500f4fb6e",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "93303169969611ca",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 14,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "050b51a839b4aab8",
-        "type": "ui_spacer",
-        "z": "575a201eba4e1242",
-        "name": "spacer",
-        "group": "192862166859b7a8",
-        "order": 15,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "d0571de1a6f0d4c2",
-        "type": "ui_group",
-        "name": "Mode",
-        "tab": "dae1736014eedf68",
-        "order": 7,
-        "disp": false,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "e10996780909ec12",
         "type": "mqtt in",
         "z": "575a201eba4e1242",
@@ -2627,5 +1826,408 @@
                 "ce90868fc628e630"
             ]
         ]
+    },
+    {
+        "id": "1c366ddf69853768",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8cf47de266546bbc",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "09ccdc6f29859f53",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "75511c9e0983e051",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aa3eb5252df11f71",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f21781ce078f8e51",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cb6d5579af4d53b0",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "36b539142946e6bf",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a2004872d49e3a6c",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 13,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "5be3b21c1ee7c285",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 15,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "612550ac39f6eb0d",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 17,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "d8511d7c56de90ae",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 19,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "e9d0c43f4d4052a4",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "6e72d53a2b1caef3",
+        "order": 20,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "84029229d7309291",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "0ddd45a548a1f3dc",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1566402d5743f97d",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "367a0d6334ebdae2",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7ebd122231377708",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a42c9a55c4e9f17b",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d7cd68a5647e8321",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "67cba97a110849b5",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "eac5c5fc6447e44b",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2724ce6f311072be",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0c2c63dce937ecb1",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "30d0402500f4fb6e",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "93303169969611ca",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "050b51a839b4aab8",
+        "type": "ui_spacer",
+        "z": "575a201eba4e1242",
+        "name": "spacer",
+        "group": "192862166859b7a8",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "hivemqcloud",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Cloud",
+        "broker": "b2f6a66ded4d42eeb4911993f124ad2c.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6e72d53a2b1caef3",
+        "type": "ui_group",
+        "name": "Format",
+        "tab": "tab1",
+        "order": 1,
+        "disp": false,
+        "width": 19,
+        "collapse": false,
+        "className": "spacing"
+    },
+    {
+        "id": "dfc255bccfd997e3",
+        "type": "ui_group",
+        "name": "Relays",
+        "tab": "tab1",
+        "order": 2,
+        "disp": false,
+        "width": "8",
+        "collapse": false,
+        "className": "relay"
+    },
+    {
+        "id": "81b1bdc3.9a60b8",
+        "type": "ui_group",
+        "name": "Hacks",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fe0d70ee749307e2",
+        "type": "ui_group",
+        "name": "Time",
+        "tab": "tab1",
+        "order": 3,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "192862166859b7a8",
+        "type": "ui_group",
+        "name": "Temperature 1",
+        "tab": "dae1736014eedf68",
+        "order": 2,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ddd45a548a1f3dc",
+        "type": "ui_group",
+        "name": "Clock",
+        "tab": "dae1736014eedf68",
+        "order": 1,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a96321ce846e7070",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "dae1736014eedf68",
+        "order": 3,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "43ed8a81a913da98",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "dae1736014eedf68",
+        "order": 6,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d0571de1a6f0d4c2",
+        "type": "ui_group",
+        "name": "Mode",
+        "tab": "dae1736014eedf68",
+        "order": 7,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab1",
+        "type": "ui_tab",
+        "name": "Aeroponics",
+        "icon": "",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dae1736014eedf68",
+        "type": "ui_tab",
+        "name": "Aeroponics1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
     }
 ]
