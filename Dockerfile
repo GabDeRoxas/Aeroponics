@@ -10,7 +10,7 @@ WORKDIR /data
 
 # Copy flows first (to avoid npm wiping during layer caching)
 COPY flows.json /data/flows.json
-COPY flows_cred.json /data/flows_cred.json
+
 
 # Install dashboard and MQTT broker node
 RUN npm install --unsafe-perm node-red-dashboard
