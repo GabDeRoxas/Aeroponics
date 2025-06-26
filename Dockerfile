@@ -1,17 +1,20 @@
 FROM nodered/node-red:latest
 
-# Install dashboard (UI)
-RUN npm install --unsafe-perm node-red-dashboard
+# Become root to install system tools
+USER root
+RUN apt-get update && apt-get install -y build-essential python3 && apt-get clean
 
-# Optional: Install MQTT node explicitly
-RUN npm install --unsafe-perm node-red-contrib-mqtt-broker
+# Switch to node-red user and set working directory
+USER node-red
+WORKDIR /data
 
-# Copy flow and credential files
+# Copy flows
 COPY flows.json /data/flows.json
+COPY flows_cred.json /data/flows_cred.json
 
-# Optional: Copy settings if customized
-# COPY settings.js /data/settings.js
+# Install dashboard in correct location
+RUN npm install --prefix /data --unsafe-perm node-red-dashboard@3.6.0
 
-# Expose Node-RED default port
+# Expose port
 EXPOSE 1880
 ENV PORT=1880
