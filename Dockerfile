@@ -17,7 +17,7 @@ WORKDIR /data
 
 # Copy flow files
 COPY flows.json /data/flows.json
-COPY flows_cred.json /data/flows_cred.json
+
 
 # Install the Node-RED dashboard in correct user scope
 RUN npm install --prefix /data --unsafe-perm node-red-dashboard@3.6.0
