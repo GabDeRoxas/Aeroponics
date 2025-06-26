@@ -1,17 +1,18 @@
 FROM nodered/node-red:latest
 
-# Install node-red-dashboard (UI components)
-RUN npm install --unsafe-perm node-red-dashboard@3.6.0
 
-# (Optional) Install MQTT package — usually preinstalled, but safe to include
-RUN npm install --unsafe-perm node-red-contrib-mqtt-broker
 
-# Copy your Node-RED flow and config
+# Copy your Node-RED flow and config before npm installs
 COPY flows.json /data/flows.json
-
-# Optional: If you have custom Node-RED config, include it
 COPY settings.js /data/settings.js
 
-# Expose port for Render
+# Force remove new dashboard and install classic dashboard (v3)
+RUN npm uninstall --unsafe-perm @flowfuse/node-red-dashboard || true
+RUN npm install --unsafe-perm node-red-dashboard@3.6.5
+
+# (Optional) Install embedded MQTT broker node
+RUN npm install --unsafe-perm node-red-contrib-mqtt-broker
+
+# Expose Node-RED default port
 EXPOSE 1880
 ENV PORT=1880
