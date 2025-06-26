@@ -1,20 +1,27 @@
 FROM nodered/node-red:latest
 
-# Become root to install system tools
+# Switch to root to install build tools
 USER root
-RUN apt-get update && apt-get install -y build-essential python3 && apt-get clean
 
-# Switch to node-red user and set working directory
+# Use apk (Alpine's package manager)
+RUN apk add --no-cache \
+    python3 \
+    make \
+    g++ \
+    linux-headers \
+    bash
+
+# Switch back to node-red user
 USER node-red
 WORKDIR /data
 
-# Copy flows
+# Copy flow files
 COPY flows.json /data/flows.json
+COPY flows_cred.json /data/flows_cred.json
 
-
-# Install dashboard in correct location
+# Install the Node-RED dashboard in correct user scope
 RUN npm install --prefix /data --unsafe-perm node-red-dashboard@3.6.0
 
-# Expose port
+# Expose Node-RED default port
 EXPOSE 1880
 ENV PORT=1880
