@@ -1,20 +1,21 @@
 FROM nodered/node-red:latest
 
-# Install required build tools for Alpine
 USER root
+
+# Install build dependencies (if needed for MQTT or dashboard)
 RUN apk add --no-cache python3 make g++ linux-headers bash
 
-# Switch to the node-red user
 USER node-red
 WORKDIR /data
 
-# Copy your flow and credential files
+# Copy flows first (to avoid npm wiping during layer caching)
 COPY flows.json /data/flows.json
+COPY flows_cred.json /data/flows_cred.json
 
+# Install dashboard and MQTT broker node
+RUN npm install --unsafe-perm node-red-dashboard
+RUN npm install --unsafe-perm node-red-contrib-mqtt-broker
 
-# Install Node-RED Dashboard
-RUN npm install --prefix /data --unsafe-perm node-red-dashboard@3.6.0
-
-# Expose the default Node-RED port
+# Expose Node-RED default port
 EXPOSE 1880
 ENV PORT=1880
