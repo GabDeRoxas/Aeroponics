@@ -1,7 +1,7 @@
 FROM nodered/node-red:latest
 
 # Install node-red-dashboard (UI components)
-RUN npm install --unsafe-perm node-red-dashboard
+RUN npm install --unsafe-perm node-red-dashboard@3.6.0
 
 # (Optional) Install MQTT package — usually preinstalled, but safe to include
 RUN npm install --unsafe-perm node-red-contrib-mqtt-broker
