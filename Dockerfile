@@ -1,27 +1,20 @@
 FROM nodered/node-red:latest
 
-# Switch to root to install build tools
+# Install required build tools for Alpine
 USER root
+RUN apk add --no-cache python3 make g++ linux-headers bash
 
-# Use apk (Alpine's package manager)
-RUN apk add --no-cache \
-    python3 \
-    make \
-    g++ \
-    linux-headers \
-    bash
-
-# Switch back to node-red user
+# Switch to the node-red user
 USER node-red
 WORKDIR /data
 
-# Copy flow files
+# Copy your flow and credential files
 COPY flows.json /data/flows.json
 
 
-# Install the Node-RED dashboard in correct user scope
+# Install Node-RED Dashboard
 RUN npm install --prefix /data --unsafe-perm node-red-dashboard@3.6.0
 
-# Expose Node-RED default port
+# Expose the default Node-RED port
 EXPOSE 1880
 ENV PORT=1880
