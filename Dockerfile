@@ -10,7 +10,7 @@ WORKDIR /data
 
 # Copy flows
 COPY flows.json /data/flows.json
-COPY flows_cred.json /data/flows_cred.json
+
 
 # Install dashboard in correct location
 RUN npm install --prefix /data --unsafe-perm node-red-dashboard@3.6.0
